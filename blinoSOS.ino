@@ -31,48 +31,39 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
 
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(4000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
-
+  delay(5000);
+  S();
+  delay(1000);
+  O();
+  delay(1000);
+  S();
   
+}
 
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(2000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(2000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(2000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(2000);                       // wait for a second
+void S(){
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(500);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(500);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(500);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
+}
 
-
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(500);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(500);  
-
-
-  
+void O(){
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(1000);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(1000);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
+  delay(500);
+  digitalWrite(LED_BUILTIN, LOW);//ON
+  delay(1000);
+  digitalWrite(LED_BUILTIN, HIGH);//OFF
 }
